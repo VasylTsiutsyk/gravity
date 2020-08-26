@@ -1,0 +1,68 @@
+#menu__toggle {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    &:checked~.menu__btn {
+        span {
+            box-shadow: $b-shadow-base;
+        }
+    }
+    &:checked~.menu__list {
+        visibility: visible;
+        right: 0;
+    }
+}
+
+.menu {
+    &__btn {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+        transition: $transition-base;
+        span {
+            position: absolute;
+            right: 0;
+            height: 3px;
+            background-color: $c-black;
+        }
+        span:nth-of-type(1) {
+            display: block;
+            width: 100%;
+        }
+        span:nth-of-type(2) {
+            top: 11px;
+            width: 18px;
+        }
+    }
+    &__list {
+        padding: 10px 30px;
+        position: absolute;
+        z-index: 100;
+        visibility: hidden;
+        top: 50px;
+        right: -400%;
+        background-color: rgba($c-blue, 0.5);
+        transition: $transition-base;
+        text-align: right;
+        ul {
+            list-style: none;
+        }
+    }
+    &__item {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        color: $c-light;
+        text-decoration: none;
+        transition: $transition-base;
+        &:hover {
+            color: $c-light;
+            text-decoration: underline;
+        }
+    }
+}

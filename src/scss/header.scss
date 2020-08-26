@@ -1,0 +1,18 @@
+//header
+.header {
+    &__wrap {
+        padding: 60px 0;
+        @include respond-below(md_plus) {
+            padding: 50px 0;
+        }
+        @include respond-below(md) {
+            padding: 40px 0;
+        }
+        @include respond-below(sm) {
+            padding: 30px 0;
+        }
+        @include respond-below(xs) {
+            padding: 20px 0;
+        }
+    }
+}

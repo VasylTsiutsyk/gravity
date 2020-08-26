@@ -1,0 +1,52 @@
+// baner
+.baner {
+    position: relative;
+    &__txt-box {
+        padding: 120px 0;
+        @include respond-below(md_plus) {
+            padding: 100px 0;
+        }
+        @include respond-below(md) {
+            padding: 60px 0;
+        }
+        @include respond-below(sm) {
+            padding: 40px 0;
+        }
+        @include respond-below(xs) {
+            padding: 20px 0;
+        }
+    }
+    &__title {
+        font-family: $ff-base;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: -1px;
+        color: #151515;
+        @include respond-below(md_plus) {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        @include respond-below(md) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @include respond-below(sm) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    &__btn {
+        margin-top: 55px;
+    }
+    &__img-box {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        background-image: url('../img/baner/baner.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

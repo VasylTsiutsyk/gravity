@@ -1,0 +1,43 @@
+//works
+.works {
+    &__subtitle {
+        margin: 40px 0;
+    }
+    &__list {
+        margin: 0 -12px;
+        padding: 16px 0;
+        list-style: none;
+    }
+    &__item {
+        margin: 0 12px;
+        a {
+            text-decoration: none;
+            color: $c-black;
+            opacity: 0.5;
+            transition: $transition-base;
+            &:hover {
+                color: $c-blue;
+                opacity: 1;
+            }
+        }
+    }
+    &__images {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    &__img-box {
+        padding: 15px 0;
+        img {
+            position: relative;
+            width: 100%;
+            transition: $transition-base;
+        }
+        &:hover img {
+            top: -20px;
+            box-shadow: 0 0 10px rgba($c-black, 0.7);
+        }
+    }
+    &__more {
+        padding: 50px 0;
+    }
+}

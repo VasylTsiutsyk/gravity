@@ -1,0 +1,91 @@
+//global
+.title-global {
+    font-family: $ff-base;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: $c-black;
+    @include respond-below(md_plus) {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    @include respond-below(md) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @include respond-below(sm) {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    @include respond-below(xs) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.subtitle-global {
+    font-family: $ff-base;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $c-black;
+    opacity: 0.7;
+    @include respond-below(md) {
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 3px;
+    }
+    @include respond-below(sm) {
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+.btn-global {
+    padding: 17px;
+    border: none;
+    font-family: $ff-base;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background-color: #4737FF;
+    color: $c-light;
+    transition: $transition-base;
+    font-size: 18px;
+    @include respond-below(md_plus) {
+        padding: 15px;
+    }
+    @include respond-below(md) {
+        padding: 12px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    &:hover {
+        background-color: #2010d6;
+    }
+}
+
+.txt-global {
+    font-family: $ff-base;
+    font-size: 18px;
+    line-height: 28px;
+    color: $c-black;
+    opacity: 0.7;
+    @include respond-below(md_plus) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    @include respond-below(md) {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    @include respond-below(sm) {
+        line-height: 22px;
+    }
+}
