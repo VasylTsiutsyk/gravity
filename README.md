@@ -1,1 +1,1 @@
-# ts-gravity
+# Gravity | by Vasyl Tsiutsyk
